@@ -1,0 +1,31 @@
+/* Mobile Devices (portrait and landscape) up to 767px */
+@media only screen and (max-width: 567px) {
+  .navList {
+    margin-right: 6rem;
+  }
+  .NavLink {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0.2rem;
+  }
+  .NavLinkIcon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .NavLinkText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* Tablets and Min Laptops 768px */
+@media only screen and (min-width: 568px) {
+}
+/* Desktops and larger screens 1340px*/
+@media only screen and (min-width: 840px) {
+}

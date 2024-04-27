@@ -1,0 +1,15 @@
+#mainMain {
+  background: none;
+}
+
+.sessionHeader {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  display: grid;
+}
+
+.sessionHeaderNav {
+  background: none;
+}

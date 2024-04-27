@@ -1,0 +1,96 @@
+/* Mobile Devices (portrait and landscape) up to 767px */
+@media only screen and (max-width: 567px) {
+  .headerEntryLeft {
+    display: none;
+  }
+  .headerEntryRight {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerEntryForSmall {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerEntryForLarge {
+    display: none;
+  }
+}
+/* Tablets and Min Laptops 768px */
+@media only screen and (min-width: 568px) {
+  .headerEntryLeft {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerEntryRight {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainHeader {
+    display: grid;
+    grid-template-columns: 1fr 15rem;
+  }
+  .headerEntryForSmall {
+    display: none;
+  }
+  .headerEntryForLarge {
+    display: block;
+  }
+}
+/* Desktops and larger screens 1340px*/
+@media only screen and (min-width: 840px) {
+  .headerEntryLeft {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerEntryRight {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainHeader {
+    display: grid;
+    grid-template-columns: 1fr 17rem;
+  }
+  .headerEntryForSmall {
+    display: none;
+  }
+  .headerEntryForLarge {
+    display: block;
+  }
+}
+
+.UserIdentity {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.UserIdentityName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.UserIdentityTime {
+  font-size: xx-small;
+  margin-top: -0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

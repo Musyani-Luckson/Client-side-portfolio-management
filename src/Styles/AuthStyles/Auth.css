@@ -1,0 +1,193 @@
+.AuthLayout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.header {
+  position: sticky;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+/* Mobile Devices (portrait and landscape) up to 767px */
+@media only screen and (max-width: 567px) {
+  .nonFormComp {
+    display: none;
+  }
+  .formComp {
+    display: block;
+  }
+  .SignUp {
+    display: grid;
+  }
+  .myForm {
+    width: 90%;
+  }
+}
+/* Tablets and Min Laptops 768px */
+@media only screen and (min-width: 568px) {
+  .nonFormComp {
+    display: block;
+  }
+  .formComp {
+    display: block;
+  }
+  .SignUp {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+  }
+  .nonFormComp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .myForm {
+    width: 70%;
+  }
+}
+/* Desktops and larger screens 1340px*/
+@media only screen and (min-width: 840px) {
+  .nonFormComp {
+    display: block;
+  }
+  .formComp {
+    display: block;
+  }
+  .SignUp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nonFormComp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .myForm {
+    width: 70%;
+  }
+}
+.SignUp {
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
+  width: 100%;
+}
+.formComp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pageName,
+.bottomText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.messageFiled {
+  font-size: small;
+  height: 1rem;
+}
+
+#isLogged {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1rem;
+}
+
+#showUser {
+  display: grid;
+  grid-template-rows: auto auto;
+  height: 1rem;
+}
+
+#headerUserName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: medium;
+}
+
+#headerUserSid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+  margin-top: -0.3rem;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bi-person-square {
+  font-size: xx-large;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eachClass {
+  width: 100%;
+  display: grid;
+  grid-gap: 1pt;
+  grid-template-columns: 5rem 1fr;
+}
+.eachClassImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+}
+
+.eachClassDetails {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 1pt;
+}
+
+.eachClassSchool {
+  font-size: x-small;
+}
+.eachClassName {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.eachClassSchoolMax {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-size: x-small;
+}
+
+.eachClassSchoolBadges {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 1rem;
+}
+
+.eachClassImageIcon{
+  font-size: 2.5rem;
+}
